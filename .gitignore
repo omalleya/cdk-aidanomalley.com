@@ -2,3 +2,4 @@ bin/**
 cdk.out/**
 dist/**
 website/**
+node_modules/**
