@@ -1,0 +1,19 @@
+{
+  "name": "cdk-aidanomalley-com",
+  "version": "1.0.0",
+  "description": "CDK stack to deploy React build files to S3 and invalidate CloudFront",
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk",
+    "deploy": "cd ../aidanomalley.com && npm run build && cd ../cdk-aidanomalley.com && cp -r ../aidanomalley.com/dist/* ./website && cdk deploy"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.170.0",
+    "constructs": "^10.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "aws-cdk": "^2.170.0",
+    "typescript": "^5.7.2"
+  }
+}
